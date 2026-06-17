@@ -1,0 +1,55 @@
+/* Charts */
+.chart-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+}
+
+html.dark .chart-container {
+  background: #1f2937;
+}
+
+.chart-container h3 {
+  margin: 0 0 1rem 0;
+  color: var(--light-text);
+}
+
+.empty-chart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  color: #9ca3af;
+  font-size: 1rem;
+}
+
+.recharts-surface {
+  background: transparent !important;
+}
+
+.recharts-text {
+  fill: var(--light-text) !important;
+}
+
+.recharts-legend-wrapper {
+  padding: 1rem 0 !important;
+}
+
+.recharts-cartesian-axis-tick {
+  fill: var(--light-text) !important;
+}
+
+html.dark .recharts-legend-item-text {
+  color: var(--light-text) !important;
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    padding: 1rem;
+  }
+
+  .chart-container h3 {
+    font-size: 1.1rem;
+  }
+}
